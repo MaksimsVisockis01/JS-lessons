@@ -88,9 +88,138 @@
 
 //we can use methods for arrays:
 
-const array = ['apples', 'oranges', 'pears', 10, true, false, null];
+//const array = ['apples', 'oranges', 'pears', 10, true, false, null];
 
-array.push('end')//push values into the end
-array.unshift('start')//push values into the begining
-array.pop();//take away last value from array
-console.log(array);
+// array.push('end')//push values into the end
+// array.unshift('start')//push values into the begining
+// array.pop();//take away last value from array
+
+// console.log(Array.isArray(array));// check if it is array (true)
+// console.log(Array.isArray('apples')); // false
+
+//console.log(array.indexOf('oranges')); // check index of array (1)
+
+//----------------------
+
+//Associative array
+
+// const person = {
+//     firstName: 'Max',
+//     lastName: 'V',
+//     age: 18,
+//     hobbies: ['programing', 'games', 'reading'],
+//     address: {
+//         street: 'Baker street 221',
+//         city: 'London',
+//         county: 'England'
+//     }
+// }
+
+//console.log(person.firstName);//taking from array "person" variable firstName (Max)
+//console.log(person.firstName, person.lastName);//we can separate any of array variables (Max V)
+
+//console.log(person.hobbies[1]); // games
+//console.log(person.address.city); // London
+
+// person.email = 'maxv@gmail.com'; // add new line in array 'person' with variable called email with value 'maxv@gmail.com'
+// console.log(person);
+
+
+
+// const todos = [
+//     {
+//         id: 1,
+//         task: 'take out trash',
+//         isCompl: false
+//     },
+//     {
+//         id: 2,
+//         task: 'brush teeth',
+//         isCompl: true
+//     },
+//     {
+//         id: 3,
+//         task: 'do the training',
+//         isCompl: true
+//     }
+// ];
+
+// const todoJSON = JSON.stringify(todos);//convert  our array to JSON format
+// console.log(todoJSON);
+
+//----------------------
+
+//  For loop
+
+// for(let i = 0; i < 10; i++){
+//     console.log(i);
+// }
+
+//----------------------
+
+//  While loop
+// let i = 0
+// while (i<10){
+//     console.log(i);
+//     i++;
+// }
+
+//----------------------
+
+// const todos = [
+//     {
+//         id: 1,
+//         task: 'take out trash',
+//         isCompl: false
+//     },
+//     {
+//         id: 2,
+//         task: 'brush teeth',
+//         isCompl: true
+//     },
+//     {
+//         id: 3,
+//         task: 'do the training',
+//         isCompl: true
+//     }
+// ];
+
+// for(let i = 0; i < todos.length; i++){
+//         console.log(todos[i].task);
+//     }
+
+
+// another way to for loop
+
+// for(let todo of todos){
+//     console.log(todo.task);
+// }
+
+//----------------------
+
+//forEach, map, filter
+
+// todos.forEach(function(todo){
+//     console.log(todo.task);
+// });
+
+// const todoText = todos.map(function(todo){ //making an array from variables
+//     return todo.task;
+// });
+// console.log(todoText);
+
+
+// const todoCompleted = todos.filter(function(todo){ //filter and return todos array where variable isCompl is true
+//     return todo.isCompl === true;
+// });
+// console.log(todoCompleted);
+
+//combine filter and map
+// const todoCompleted = todos.filter(function(todo){ 
+//     return todo.isCompl === true;
+// }).map(function(taskCompl){
+//     return taskCompl.task
+// });// filtes todos array where variable isCompl is true and return all tasks wich are complited
+
+// console.log(todoCompleted);
+
